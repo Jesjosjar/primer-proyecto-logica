@@ -59,6 +59,11 @@ p {
   width: 90%;   /* se adapta al ancho */
   padding: 2em; /* relativo al texto */
 }
+.container {
+  width: 90%;   /* se adapta al ancho */
+  padding: 2em; /* relativo al texto */
+}
+
 
 
 
