@@ -55,4 +55,10 @@ p {
     align-items: center;
     justify-content: space-around;
 }
+.container {
+  width: 90%;   /* se adapta al ancho */
+  padding: 2em; /* relativo al texto */
+}
+
+
 
