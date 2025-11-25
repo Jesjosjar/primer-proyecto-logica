@@ -66,4 +66,9 @@ button {
 }
 #resultado2{
     color: #89ff6c;
+
+}
+.container {
+  width: 90%;   /* se adapta al ancho */
+  padding: 2em; /* relativo al texto */
 }
