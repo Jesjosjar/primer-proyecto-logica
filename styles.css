@@ -11,12 +11,16 @@ body {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     height: 95vh;
     width: 95vw;
+    margin: 0;
 }
 
 input {
     background: #252525;
     transition: all .3s ease-in;
     border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
 }
 
 button {
@@ -39,7 +43,7 @@ button:hover, input:hover {
 }
 
 h1 {
-    font-size:50px ;
+    font-size: 50px;
 }
 
 p {
@@ -55,15 +59,63 @@ p {
     align-items: center;
     justify-content: space-around;
 }
+
 .container {
-  width: 90%;   /* se adapta al ancho */
-  padding: 2em; /* relativo al texto */
-}
-.container {
-  width: 90%;   /* se adapta al ancho */
-  padding: 2em; /* relativo al texto */
+  width: 90%;
+  padding: 2em;
+  margin: auto;
 }
 
+@media (max-width: 768px) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        width: 100vw;
+    }
 
+    #titulo, p, .nav {
+        grid-column: 1;
+        grid-row: auto;
+    }
 
+    h1 {
+        font-size: 32px;
+    }
 
+    p {
+        font-size: 18px;
+    }
+
+    input, button {
+        width: 90%;
+        height: auto;
+        font-size: 16px;
+        margin: 10px auto;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    input, button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
